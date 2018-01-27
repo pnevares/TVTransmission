@@ -5,8 +5,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour {
     public GameObject[] posts;
     public int[] correctGears;
-
-    private int selectedPost = 0;
+    public int selectedPost = 0;
 
 	void Start () {
         SelectPost(0);
@@ -17,9 +16,12 @@ public class GameController : MonoBehaviour {
 	}
 
     public void SelectPost(int postId) {
+        Transform oldOverlay = posts[selectedPost].transform.GetChild(0);
+        oldOverlay.gameObject.SetActive(false);
+
         selectedPost = postId;
 
-        Transform overlay = posts[postId].transform.GetChild(0);
-        overlay.gameObject.SetActive(true);
+        Transform newOverlay = posts[postId].transform.GetChild(0);
+        newOverlay.gameObject.SetActive(true);
     }
 }
