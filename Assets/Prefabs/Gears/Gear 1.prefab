@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4994196984136750}
   - component: {fileID: 212023218949961714}
   - component: {fileID: 95535982563863760}
+  - component: {fileID: 114234246821946198}
   m_Layer: 0
   m_Name: Gear 1
   m_TagString: Untagged
@@ -58,6 +59,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114234246821946198
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1015316736642560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09d8ee6aadcbf4c06a1424748a6c6824, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reverse: 0
 --- !u!212 &212023218949961714
 SpriteRenderer:
   m_ObjectHideFlags: 1
