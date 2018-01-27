@@ -407,7 +407,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4570648374637964, guid: 749a90bddf0da47ef91970435eca8ebd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.25
+      value: 1.106
       objectReference: {fileID: 0}
     - target: {fileID: 4570648374637964, guid: 749a90bddf0da47ef91970435eca8ebd, type: 2}
       propertyPath: m_LocalPosition.z
@@ -782,7 +782,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4570648374637964, guid: 749a90bddf0da47ef91970435eca8ebd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.9
+      value: 0.7559999
       objectReference: {fileID: 0}
     - target: {fileID: 4570648374637964, guid: 749a90bddf0da47ef91970435eca8ebd, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2707,6 +2707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1825538025}
   - component: {fileID: 1825538026}
+  - component: {fileID: 1825538027}
   m_Layer: 5
   m_Name: Remote
   m_TagString: Untagged
@@ -2750,6 +2751,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1825538027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1825538024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cc7f0e48aad471888a2dd2fa802016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1879668531
 GameObject:
   m_ObjectHideFlags: 0
