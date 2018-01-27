@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GameController : MonoBehaviour {
     public GameObject[] posts;
     public int[] correctGears;
+    public int[] currentGears;
     public int selectedPost = 0;
 
     public GameObject gearPrefab;
@@ -21,7 +23,9 @@ public class GameController : MonoBehaviour {
 	}
 	
 	void Update () {
-		
+        if (correctGears.SequenceEqual(currentGears)) {
+            Debug.Log("you win");
+        }
     }
 
     public void SelectPost(int postId) {
