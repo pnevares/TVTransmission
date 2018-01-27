@@ -7,6 +7,7 @@ public class GameController : MonoBehaviour {
     public GameObject[] posts;
     public int[] correctGears;
     public int[] currentGears;
+    public GameObject[] currentGearsObjects;
     public int selectedPost = 0;
 
     public GameObject gearPrefab;
@@ -62,7 +63,11 @@ public class GameController : MonoBehaviour {
             newGear.transform.position = position;
             newGear.transform.localScale = scale;
 
+            // check if a neighbor is already moving
+            // if so, begin moving reverse to the neighbor
+
             currentGears[selectedPost] = size;
+            currentGearsObjects[selectedPost] = newGear;
         }
     }
 }
