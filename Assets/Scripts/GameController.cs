@@ -41,14 +41,16 @@ public class GameController : MonoBehaviour {
     }
 
     public void SetGear(int size) {
-        Transform parent = GameObject.FindWithTag("Television").transform;
-        Vector3 position = posts[selectedPost].transform.position;
-        Vector3 scale = gearSizes[size];
+        if(currentGears[selectedPost] == -1) {
+            Transform parent = GameObject.FindWithTag("Television").transform;
+            Vector3 position = posts[selectedPost].transform.position;
+            Vector3 scale = gearSizes[size];
 
-        GameObject newGear = Instantiate(gearPrefab, parent);
-        newGear.transform.position = position;
-        newGear.transform.localScale = scale;
+            GameObject newGear = Instantiate(gearPrefab, parent);
+            newGear.transform.position = position;
+            newGear.transform.localScale = scale;
 
-        currentGears[selectedPost] = size;
+            currentGears[selectedPost] = size;
+        }
     }
 }
