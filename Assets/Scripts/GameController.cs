@@ -48,5 +48,7 @@ public class GameController : MonoBehaviour {
         GameObject newGear = Instantiate(gearPrefab, parent);
         newGear.transform.position = position;
         newGear.transform.localScale = scale;
+
+        currentGears[selectedPost] = size;
     }
 }
