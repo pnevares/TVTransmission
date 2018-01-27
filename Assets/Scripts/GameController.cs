@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GameController : MonoBehaviour {
     public GameObject[] posts;
     public int[] correctGears;
+    public int[] currentGears;
     public int selectedPost = 0;
 
     public GameObject gearPrefab;
@@ -33,7 +35,9 @@ public class GameController : MonoBehaviour {
 	}
 	
 	void Update () {
-		
+        if (correctGears.SequenceEqual(currentGears)) {
+            Debug.Log("you win");
+        }
     }
 
     public void SelectPost(int postId) {
@@ -49,12 +53,16 @@ public class GameController : MonoBehaviour {
     }
 
     public void SetGear(int size) {
-        Transform parent = GameObject.FindWithTag("Television").transform;
-        Vector3 position = posts[selectedPost].transform.position;
-        Vector3 scale = gearSizes[size];
+        if(currentGears[selectedPost] == -1) {
+            Transform parent = GameObject.FindWithTag("Television").transform;
+            Vector3 position = posts[selectedPost].transform.position;
+            Vector3 scale = gearSizes[size];
 
-        GameObject newGear = Instantiate(gearPrefab, parent);
-        newGear.transform.position = position;
-        newGear.transform.localScale = scale;
+            GameObject newGear = Instantiate(gearPrefab, parent);
+            newGear.transform.position = position;
+            newGear.transform.localScale = scale;
+
+            currentGears[selectedPost] = size;
+        }
     }
 }
