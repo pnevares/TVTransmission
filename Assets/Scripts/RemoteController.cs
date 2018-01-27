@@ -13,11 +13,23 @@ public class RemoteController : MonoBehaviour {
     }
 
     public void MoveDown() {
-        gameController.SelectPost(gameController.selectedPost + 1);
+        if (gameController.selectedPost < 20)
+            gameController.SelectPost(gameController.selectedPost + 4);
     }
 
     public void MoveUp() {
-        gameController.SelectPost(gameController.selectedPost - 1);
+        if (gameController.selectedPost > 3)
+            gameController.SelectPost(gameController.selectedPost - 4);
+    }
+
+    public void MoveRight() {
+        if (gameController.selectedPost % 4 < 3)
+            gameController.SelectPost(gameController.selectedPost + 1);
+    }
+    
+    public void MoveLeft() {
+        if (gameController.selectedPost % 4 > 0)
+            gameController.SelectPost(gameController.selectedPost - 1);
     }
 
 }
