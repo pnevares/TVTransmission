@@ -17,7 +17,19 @@ public class GameController : MonoBehaviour {
     };
 
 	void Start () {
-        SelectPost(0);
+		int startPost;
+
+		// find the first available post
+		startPost = 0;
+		while (posts[startPost].GetComponent<SpriteRenderer>().enabled == false)
+		{
+			startPost++;
+			if (startPost >= posts.Length) {
+				// no valid posts found
+				return;
+			}
+		}
+        SelectPost(startPost);
 	}
 	
 	void Update () {
