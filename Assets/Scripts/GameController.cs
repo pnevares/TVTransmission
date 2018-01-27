@@ -29,15 +29,15 @@ public class GameController : MonoBehaviour {
     }
 
     public void SelectPost(int postId) {
-        if(postId >= 0 && postId < posts.Length) {
-            Transform oldOverlay = posts[selectedPost].transform.GetChild(0);
-            oldOverlay.gameObject.SetActive(false);
+		if (posts[postId].GetComponent<SpriteRenderer>().enabled == true) {
+			Transform oldOverlay = posts[selectedPost].transform.GetChild (0);
+			oldOverlay.gameObject.SetActive (false);
 
-            selectedPost = postId;
+			selectedPost = postId;
 
-            Transform newOverlay = posts[postId].transform.GetChild(0);
-            newOverlay.gameObject.SetActive(true);
-        }
+			Transform newOverlay = posts [postId].transform.GetChild (0);
+			newOverlay.gameObject.SetActive (true);
+		}
     }
 
     public void SetGear(int size) {
