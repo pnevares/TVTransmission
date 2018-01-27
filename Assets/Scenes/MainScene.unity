@@ -156,6 +156,10 @@ Prefab:
       propertyPath: m_Name
       value: Television
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 80373277d76934345b48924f4f7e7545, type: 3}
+      propertyPath: m_TagString
+      value: Television
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80373277d76934345b48924f4f7e7545, type: 3}
   m_IsPrefabParent: 0
@@ -1135,6 +1139,7 @@ MonoBehaviour:
   - {fileID: 734989793}
   correctGears: 0300000004000000
   selectedPost: 0
+  gearPrefab: {fileID: 1015316736642560, guid: ed64609b6c9124fec989bbfa65b3052f, type: 2}
 --- !u!4 &636784248
 Transform:
   m_ObjectHideFlags: 0
@@ -1673,7 +1678,7 @@ GameObject:
   - component: {fileID: 1378187784}
   - component: {fileID: 1378187783}
   m_Layer: 5
-  m_Name: Gear button
+  m_Name: L Gear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1736,7 +1741,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1378187784}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1825538027}
+        m_MethodName: SetGear
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1378187784
@@ -2498,7 +2514,7 @@ GameObject:
   - component: {fileID: 1700334148}
   - component: {fileID: 1700334147}
   m_Layer: 5
-  m_Name: Gear button
+  m_Name: XL Gear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2561,7 +2577,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1700334148}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1825538027}
+        m_MethodName: SetGear
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1700334148
@@ -2784,7 +2811,7 @@ GameObject:
   - component: {fileID: 1879668534}
   - component: {fileID: 1879668533}
   m_Layer: 5
-  m_Name: Gear button
+  m_Name: M Gear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2847,7 +2874,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1879668534}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1825538027}
+        m_MethodName: SetGear
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1879668534
@@ -2895,7 +2933,7 @@ GameObject:
   - component: {fileID: 1902377083}
   - component: {fileID: 1902377082}
   m_Layer: 5
-  m_Name: Gear button
+  m_Name: S Gear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2958,7 +2996,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1902377083}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1825538027}
+        m_MethodName: SetGear
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1902377083

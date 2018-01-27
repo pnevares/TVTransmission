@@ -12,6 +12,10 @@ public class RemoteController : MonoBehaviour {
         }
     }
 
+    public void SetGear(int size) {
+        gameController.SetGear(size);
+    }
+
     public void MoveDown() {
         gameController.SelectPost(gameController.selectedPost + 1);
     }
