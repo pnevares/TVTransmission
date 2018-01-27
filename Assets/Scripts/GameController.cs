@@ -17,6 +17,8 @@ public class GameController : MonoBehaviour {
 	}
 
     public void SelectPost(int postId) {
+        selectedPost = postId;
+
         Animator anim = posts[postId].GetComponent<Animator>();
         anim.enabled = true;
     }
