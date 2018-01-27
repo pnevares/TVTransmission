@@ -19,7 +19,7 @@ public class GameController : MonoBehaviour {
     public void SelectPost(int postId) {
         selectedPost = postId;
 
-        Animator anim = posts[postId].GetComponent<Animator>();
-        anim.enabled = true;
+        Transform overlay = posts[postId].transform.GetChild(0);
+        overlay.gameObject.SetActive(true);
     }
 }
