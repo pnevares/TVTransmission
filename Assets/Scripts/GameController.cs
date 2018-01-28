@@ -78,20 +78,24 @@ public class GameController : MonoBehaviour {
         // check down
         if (position < 20) {
             int neighbor = position + 4;
-            MoveNeighbor(neighbor);
+            MoveNeighbor(neighbor, position);
         }
 
         // check right
         if (position % 4 < 3) {
             int neighbor = position + 1;
-            MoveNeighbor(neighbor);
+            MoveNeighbor(neighbor, position);
         }
     }
 
-    private void MoveNeighbor(int neighbor) {
+    private void MoveNeighbor(int neighbor, int original) {
         if (currentGearsObjects[neighbor] != null) {
             Animator anim = currentGearsObjects[neighbor].GetComponent<Animator>();
             anim.enabled = true;
+
+            // set the neighbor's rotation to the opposite of this gear's rotation
+            currentGearsObjects[neighbor].GetComponent<GearController>().Reverse = !currentGearsObjects[original].GetComponent<GearController>().Reverse;
+
             CheckNeighbors(neighbor);
         }
     }

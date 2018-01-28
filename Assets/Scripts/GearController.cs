@@ -3,18 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GearController : MonoBehaviour {
-    public bool reverse;
+    private bool reverse;
+    private Animator anim;
 
-	// Use this for initialization
-	void Start () {
-        Animator anim = gameObject.GetComponent<Animator>();
-        if(reverse) {
-            anim.SetBool("reverse", true);
+    public bool Reverse {
+        get {
+            return reverse;
         }
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+        set {
+            reverse = value;
+            if(reverse) {
+                anim.SetBool("reverse", true);
+            }
+        }
+    }
+
+    void Awake () {
+        anim = gameObject.GetComponent<Animator>();
 	}
 }
