@@ -1144,7 +1144,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Stupendous! Impeccable!. <click here>
+  m_Text: Stupendous! Impeccable! <click here>
 --- !u!222 &478691553
 CanvasRenderer:
   m_ObjectHideFlags: 0

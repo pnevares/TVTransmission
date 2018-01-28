@@ -872,6 +872,7 @@ MonoBehaviour:
   targetGearId: 11
   gearPrefab: {fileID: 1015316736642560, guid: ed64609b6c9124fec989bbfa65b3052f, type: 2}
   audioController: {fileID: 1691713512}
+  isCity: 0
   captionBackground: {fileID: 1698022258}
   remote: {fileID: 836215216}
   mainCamera: {fileID: 0}
