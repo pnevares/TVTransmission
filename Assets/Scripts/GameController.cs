@@ -7,6 +7,7 @@ public class GameController : MonoBehaviour {
     public int selectedPost = 0;
     public int targetGearId;
     public GameObject gearPrefab;
+    public AudioController audioController;
 
     // for success animations
     public GameObject captionBackground;
@@ -128,6 +129,7 @@ public class GameController : MonoBehaviour {
                     mainCamera.GetComponent<Animator>().SetBool("success", true);
                 }
 				tvStatic.GetComponent<Animator> ().SetBool ("success", true);
+                audioController.Success();
             }
 
             if (position < 20) {
