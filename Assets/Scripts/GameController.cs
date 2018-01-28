@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour {
     public int targetGearId;
     public GameObject gearPrefab;
     public AudioController audioController;
+	public bool isCity;
 
     // for success animations
     public GameObject captionBackground;
@@ -129,7 +130,11 @@ public class GameController : MonoBehaviour {
                     mainCamera.GetComponent<Animator>().SetBool("success", true);
                 }
 				tvStatic.GetComponent<Animator> ().SetBool ("success", true);
-                audioController.Success();
+				if (isCity == true) {
+					audioController.CitySuccess ();
+				} else {
+					audioController.Success ();
+				}
             }
 
             if (position < 20) {
