@@ -74,44 +74,86 @@ public class GameController : MonoBehaviour {
             // store object at position to track moving gears
             currentGearsObjects[selectedPost] = newGear;
 
-            // starting at position 0 (the first, moving gear)
-            // check any neighbor gears recursively to start rotating
-            CheckNeighbors();
+            // check any neighbor gears to start rotating
+            CheckIfGearShouldMove(selectedPost);
         }
     }
 
-    private void CheckNeighbors(int position = 0) {
+    private void CheckIfGearShouldMove(int position) {
         // check down
         if (position < 20) {
-            int neighbor = position + 4;
-            MoveNeighbor(neighbor, position);
+            if (IsMoving(position + 4)) {
+                RotateGear(position, position + 4);
+            }
+        }
+
+        // check up
+        if (position > 3) {
+            if (IsMoving(position - 4)) {
+                RotateGear(position, position - 4);
+            }
         }
 
         // check right
         if (position % 4 < 3) {
-            int neighbor = position + 1;
-            MoveNeighbor(neighbor, position);
+            if (IsMoving(position + 1)) {
+                RotateGear(position, position + 1);
+            }
+        }
+
+        // check left
+        if (position % 4 > 0) {
+            if (IsMoving(position - 1)) {
+                RotateGear(position, position - 1);
+            }
         }
     }
 
-    private void MoveNeighbor(int neighbor, int original) {
-        if (currentGearsObjects[neighbor] != null) {
-            Animator anim = currentGearsObjects[neighbor].GetComponent<Animator>();
-            anim.enabled = true;
+    private bool IsMoving(int position) {
+        return currentGearsObjects[position] != null && currentGearsObjects[position].GetComponent<Animator>().enabled;
+    }
 
-            // set the neighbor's rotation to the opposite of the other gear's rotation
-            currentGearsObjects[neighbor].GetComponent<GearController>().Reverse = !currentGearsObjects[original].GetComponent<GearController>().Reverse;
+    private void RotateGear(int position, int source) {
+        if(currentGearsObjects[position] != null) {
+            currentGearsObjects[position].GetComponent<Animator>().enabled = true;
+            currentGearsObjects[position].GetComponent<GearController>().Reverse = !currentGearsObjects[source].GetComponent<GearController>().Reverse;
 
-            if(neighbor == targetGearId) {
+            // check if goal is reached
+            if (position == targetGearId) {
                 success = true;
                 captionBackground.GetComponent<Animator>().enabled = true;
                 remote.GetComponent<Animator>().SetBool("success", true);
-                if(mainCamera != null) {
+                if (mainCamera != null) {
                     mainCamera.GetComponent<Animator>().SetBool("success", true);
                 }
             }
 
-            CheckNeighbors(neighbor);
+            if (position < 20) {
+                if (!IsMoving(position + 4)) {
+                    RotateGear(position + 4, position);
+                }
+            }
+
+            // check up
+            if (position > 3) {
+                if (!IsMoving(position - 4)) {
+                    RotateGear(position - 4, position);
+                }
+            }
+
+            // check right
+            if (position % 4 < 3) {
+                if (!IsMoving(position + 1)) {
+                    RotateGear(position + 1, position);
+                }
+            }
+
+            // check left
+            if (position % 4 > 0) {
+                if (!IsMoving(position - 1)) {
+                    RotateGear(position - 1, position);
+                }
+            }
         }
     }
 }
