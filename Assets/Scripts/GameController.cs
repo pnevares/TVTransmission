@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour {
     public GameObject captionBackground;
     public GameObject remote;
     public GameObject mainCamera;
+	public GameObject tvStatic;
 
     private Vector3[] gearSizes = {
         new Vector3(0.05f, 0.05f, 0.05f),
@@ -126,6 +127,7 @@ public class GameController : MonoBehaviour {
                 if (mainCamera != null) {
                     mainCamera.GetComponent<Animator>().SetBool("success", true);
                 }
+				tvStatic.GetComponent<Animator> ().SetBool ("success", true);
             }
 
             if (position < 20) {
