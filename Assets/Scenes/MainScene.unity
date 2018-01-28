@@ -413,6 +413,90 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4090914356395592, guid: 359bad16b7affeb45a6dcfb65de3b2e8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 212714574820784712, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212489062116654642, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212699384713511792, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212886807637385346, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212187346437512872, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212855405559316226, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212835971144006876, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212848740668267486, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212980068354624398, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212822689859275100, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212989119860222512, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212127584159802662, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212408272070421268, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212089782860707334, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212222529460257106, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212511942924056614, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 359bad16b7affeb45a6dcfb65de3b2e8, type: 2}
   m_IsPrefabParent: 0
@@ -724,21 +808,21 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 106988997}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   selectedPost: 0
-  targetGearId: 23
+  targetGearId: 11
   gearPrefab: {fileID: 1015316736642560, guid: ed64609b6c9124fec989bbfa65b3052f, type: 2}
   captionBackground: {fileID: 1698022258}
   remote: {fileID: 836215216}
