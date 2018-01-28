@@ -3,8 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
     public GameObject[] posts;
-    public int[] correctGears;
-    public int[] currentGears;
     public GameObject[] currentGearsObjects;
     public int selectedPost = 0;
     public int targetGearId;
@@ -57,7 +55,7 @@ public class GameController : MonoBehaviour {
     }
 
     public void SetGear(int size) {
-        if(currentGears[selectedPost] == -1) {
+        if(currentGearsObjects[selectedPost] == null) {
             Transform parent = GameObject.FindWithTag("Television").transform;
             Vector3 position = posts[selectedPost].transform.position;
             Vector3 scale = gearSizes[size];
@@ -66,8 +64,6 @@ public class GameController : MonoBehaviour {
             newGear.transform.position = position;
             newGear.transform.localScale = scale;
 
-            // store size at position to track success
-            currentGears[selectedPost] = size;
             // store object at position to track moving gears
             currentGearsObjects[selectedPost] = newGear;
 
