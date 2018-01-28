@@ -63,11 +63,36 @@ public class GameController : MonoBehaviour {
             newGear.transform.position = position;
             newGear.transform.localScale = scale;
 
-            // check if a neighbor is already moving
-            // if so, begin moving reverse to the neighbor
-
+            // store size at position to track success
             currentGears[selectedPost] = size;
+            // store object at position to track moving gears
             currentGearsObjects[selectedPost] = newGear;
+
+            // starting at position 0 (the first, moving gear)
+            // check any neighbor gears recursively to start rotating
+            CheckNeighbors();
+        }
+    }
+
+    private void CheckNeighbors(int position = 0) {
+        // check down
+        if (position < 20) {
+            int neighbor = position + 4;
+            MoveNeighbor(neighbor);
+        }
+
+        // check right
+        if (position % 4 < 3) {
+            int neighbor = position + 1;
+            MoveNeighbor(neighbor);
+        }
+    }
+
+    private void MoveNeighbor(int neighbor) {
+        if (currentGearsObjects[neighbor] != null) {
+            Animator anim = currentGearsObjects[neighbor].GetComponent<Animator>();
+            anim.enabled = true;
+            CheckNeighbors(neighbor);
         }
     }
 }

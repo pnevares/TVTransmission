@@ -362,6 +362,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1963847844559326, guid: 402ab39263f354cc5bbed62e853f7a2e,
     type: 2}
   m_PrefabInternal: {fileID: 1220071781}
+--- !u!1 &106988997 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1015316736642560, guid: ed64609b6c9124fec989bbfa65b3052f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1631561782}
 --- !u!1 &135749848 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1963847844559326, guid: 402ab39263f354cc5bbed62e853f7a2e,
@@ -1641,6 +1646,7 @@ MonoBehaviour:
   correctGears: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff02000000ffffffffffffffffffffffffffffffffffffffffffffffff02000000ffffffffffffffffffffffffffffffffffffffffffffffff
   currentGears: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
   currentGearsObjects:
+  - {fileID: 1700621758}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1663,8 +1669,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 106988997}
   selectedPost: 0
   gearPrefab: {fileID: 1015316736642560, guid: ed64609b6c9124fec989bbfa65b3052f, type: 2}
 --- !u!4 &636784248
@@ -4229,6 +4234,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1698022258}
+--- !u!1 &1700621758 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1015316736642560, guid: ed64609b6c9124fec989bbfa65b3052f,
+    type: 2}
+  m_PrefabInternal: {fileID: 268840001}
 --- !u!1 &1777981132 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1963847844559326, guid: 402ab39263f354cc5bbed62e853f7a2e,
