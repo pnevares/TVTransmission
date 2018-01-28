@@ -14,7 +14,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - gear
   - 
   - 
   - 
@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: geer
+    uniqueID: 3519218973
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

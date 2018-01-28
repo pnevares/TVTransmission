@@ -25,7 +25,7 @@ public class GameController : MonoBehaviour {
 		int startPost;
 
 		// find the first available post
-		startPost = 0;
+		startPost = 1;
 		while (posts[startPost].GetComponent<SpriteRenderer>().enabled == false)
 		{
 			startPost++;
