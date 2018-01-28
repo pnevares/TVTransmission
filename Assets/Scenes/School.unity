@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.39110762, g: 0.40624487, b: 0.39731097, a: 1}
+  m_IndirectSpecularColor: {r: 0.39110765, g: 0.406245, b: 0.39731115, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1134,7 +1134,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Excellent work! I know exactly where you should go next... <click here>
+  m_Text: Stupendous! Impeccable!. <click here>
 --- !u!222 &478691553
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1243,7 +1243,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This schoolhouse television must be fixed immediately!
+  m_Text: Citizen! The schoolhouse television must be fixed immediately!
 --- !u!222 &655882070
 CanvasRenderer:
   m_ObjectHideFlags: 0
