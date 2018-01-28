@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
     public GameObject[] posts;
@@ -18,6 +19,7 @@ public class GameController : MonoBehaviour {
         new Vector3(0.2f, 0.2f, 0.2f),
         new Vector3(0.4f, 0.4f, 0.4f),
     };
+    private bool success = false;
 
 	void Start () {
 		int startPost;
@@ -37,7 +39,13 @@ public class GameController : MonoBehaviour {
 	
 	void Update () {
         if (correctGears.SequenceEqual(currentGears)) {
-            Debug.Log("you win");
+            success = true;
+        }
+    }
+
+    public void LoadScene(string sceneName) {
+        if(success) {
+            SceneManager.LoadScene(sceneName);
         }
     }
 
@@ -93,7 +101,7 @@ public class GameController : MonoBehaviour {
             Animator anim = currentGearsObjects[neighbor].GetComponent<Animator>();
             anim.enabled = true;
 
-            // set the neighbor's rotation to the opposite of this gear's rotation
+            // set the neighbor's rotation to the opposite of the other gear's rotation
             currentGearsObjects[neighbor].GetComponent<GearController>().Reverse = !currentGearsObjects[original].GetComponent<GearController>().Reverse;
 
             CheckNeighbors(neighbor);

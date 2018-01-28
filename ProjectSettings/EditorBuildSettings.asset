@@ -8,3 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 1816a8db633854a708cdb7a1c07b007f
+  - enabled: 1
+    path: Assets/Scenes/School.unity
+    guid: c4f7dc82a11239049a43eac249c277a9
+  - enabled: 1
+    path: Assets/Scenes/City.unity
+    guid: 925c916d2f5c353428ea96f6540ef0d0
