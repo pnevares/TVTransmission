@@ -115,8 +115,8 @@ public class GameController : MonoBehaviour {
 
     private void RotateGear(int position, int source) {
         if(currentGearsObjects[position] != null) {
-            currentGearsObjects[position].GetComponent<Animator>().enabled = true;
             currentGearsObjects[position].GetComponent<GearController>().Reverse = !currentGearsObjects[source].GetComponent<GearController>().Reverse;
+            currentGearsObjects[position].GetComponent<Animator>().enabled = true;
 
             // check if goal is reached
             if (position == targetGearId) {
