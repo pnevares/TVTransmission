@@ -740,7 +740,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 106988997}
   selectedPost: 0
+  targetGearId: 23
   gearPrefab: {fileID: 1015316736642560, guid: ed64609b6c9124fec989bbfa65b3052f, type: 2}
+  captionBackground: {fileID: 1698022258}
 --- !u!4 &636784248
 Transform:
   m_ObjectHideFlags: 0

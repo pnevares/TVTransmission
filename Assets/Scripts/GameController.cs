@@ -10,8 +10,9 @@ public class GameController : MonoBehaviour {
     public int[] currentGears;
     public GameObject[] currentGearsObjects;
     public int selectedPost = 0;
-
+    public int targetGearId;
     public GameObject gearPrefab;
+    public GameObject captionBackground;
 
     private Vector3[] gearSizes = {
         new Vector3(0.05f, 0.05f, 0.05f),
@@ -37,12 +38,6 @@ public class GameController : MonoBehaviour {
         SelectPost(startPost);
 	}
 	
-	void Update () {
-        if (correctGears.SequenceEqual(currentGears)) {
-            success = true;
-        }
-    }
-
     public void LoadScene(string sceneName) {
         if(success) {
             SceneManager.LoadScene(sceneName);
@@ -103,6 +98,11 @@ public class GameController : MonoBehaviour {
 
             // set the neighbor's rotation to the opposite of the other gear's rotation
             currentGearsObjects[neighbor].GetComponent<GearController>().Reverse = !currentGearsObjects[original].GetComponent<GearController>().Reverse;
+
+            if(neighbor == targetGearId) {
+                success = true;
+                captionBackground.GetComponent<Animator>().enabled = true;
+            }
 
             CheckNeighbors(neighbor);
         }
