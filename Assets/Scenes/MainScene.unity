@@ -1021,7 +1021,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1298738924
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1052,7 +1052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1072,8 +1072,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Well done, citizen. Please follow us to a new location that could use your
-    skills. <click here>
+  m_Text: Well done. Please follow us to a new location that could use your skills.
+    <click here>
 --- !u!222 &1298738926
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1539,6 +1539,7 @@ GameObject:
   - component: {fileID: 1698022259}
   - component: {fileID: 1698022261}
   - component: {fileID: 1698022260}
+  - component: {fileID: 1698022262}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -1599,6 +1600,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1698022258}
+--- !u!95 &1698022262
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1698022258}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 44c11693b4f0d409a99e4f8fb6518fee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1700621758 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1348272531608210, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
