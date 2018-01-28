@@ -743,6 +743,7 @@ MonoBehaviour:
   targetGearId: 23
   gearPrefab: {fileID: 1015316736642560, guid: ed64609b6c9124fec989bbfa65b3052f, type: 2}
   captionBackground: {fileID: 1698022258}
+  remote: {fileID: 836215216}
 --- !u!4 &636784248
 Transform:
   m_ObjectHideFlags: 0
@@ -901,6 +902,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1789266847175040, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
     type: 2}
   m_PrefabInternal: {fileID: 313008827}
+--- !u!1 &836215216 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1524704331240186, guid: 225de76071247ac45a26ed9466bc4ea5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1468124198}
 --- !u!1 &864780692 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1933186167578034, guid: 359bad16b7affeb45a6dcfb65de3b2e8,

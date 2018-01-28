@@ -12,7 +12,10 @@ public class GameController : MonoBehaviour {
     public int selectedPost = 0;
     public int targetGearId;
     public GameObject gearPrefab;
+
+    // for success animations
     public GameObject captionBackground;
+    public GameObject remote;
 
     private Vector3[] gearSizes = {
         new Vector3(0.05f, 0.05f, 0.05f),
@@ -102,6 +105,7 @@ public class GameController : MonoBehaviour {
             if(neighbor == targetGearId) {
                 success = true;
                 captionBackground.GetComponent<Animator>().enabled = true;
+                remote.GetComponent<Animator>().SetBool("success", true);
             }
 
             CheckNeighbors(neighbor);
