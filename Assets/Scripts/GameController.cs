@@ -35,6 +35,12 @@ public class GameController : MonoBehaviour {
 		}
         SelectPost(startPost);
 	}
+
+    void Update() {
+        if(Input.GetKeyDown(KeyCode.Escape)) {
+            Application.Quit();
+        }
+    }
 	
     public void LoadScene(string sceneName) {
         if(success) {
