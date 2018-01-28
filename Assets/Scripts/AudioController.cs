@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioController : MonoBehaviour {
-    public AudioSource audioSource;
+	public AudioSource audioSource0;
+	public AudioSource audioSource1;
     public AudioClip snow;
     public AudioClip ticking;
     public AudioClip signal;
@@ -11,8 +12,8 @@ public class AudioController : MonoBehaviour {
 
     private void Start() {
         // play static on loop
-        audioSource.clip = snow;
-        audioSource.Play();
+        audioSource0.clip = snow;
+        audioSource0.Play();
     }
 
     public void Success() {
@@ -24,21 +25,16 @@ public class AudioController : MonoBehaviour {
     }
 
     private IEnumerator Crossfade(AudioClip to) {
-        float originalVolume = audioSource.volume;
+        float originalVolume = audioSource0.volume;
+        audioSource1.volume = 0f;
+        audioSource1.clip = to;
+        audioSource1.Play();
 
-        while(audioSource.volume > 0) {
-            audioSource.volume -= originalVolume * Time.deltaTime / fadeDuration;
+        while(audioSource0.volume > 0) {
+            audioSource0.volume -= originalVolume * Time.deltaTime / fadeDuration;
+            audioSource1.volume += originalVolume * Time.deltaTime / fadeDuration;
             yield return null;
         }
-
-        audioSource.clip = to;
-        audioSource.Play();
-
-        while(audioSource.volume < originalVolume) {
-            audioSource.volume += originalVolume * Time.deltaTime / fadeDuration;
-            yield return null;
-        }
-
         yield break;
     }
 }
