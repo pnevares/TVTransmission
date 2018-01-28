@@ -778,6 +778,7 @@ MonoBehaviour:
   captionBackground: {fileID: 1698022258}
   remote: {fileID: 345605062}
   mainCamera: {fileID: 1604560324}
+  tvStatic: {fileID: 1390142329}
 --- !u!4 &636784248
 Transform:
   m_ObjectHideFlags: 0
@@ -1224,6 +1225,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed2e46b67fc4bdf49b228915f93e36b2, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1390142329 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1837425200127198, guid: ed2e46b67fc4bdf49b228915f93e36b2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1390142328}
 --- !u!1 &1485870774 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1462629827865214, guid: 359bad16b7affeb45a6dcfb65de3b2e8,

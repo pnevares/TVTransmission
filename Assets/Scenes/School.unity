@@ -527,6 +527,11 @@ Prefab:
       propertyPath: currentGearsObjects.Array.data[15]
       value: 
       objectReference: {fileID: 938180045}
+    - target: {fileID: 114343860581768132, guid: 3897403bfbb127c4782246c6e5635e1e,
+        type: 2}
+      propertyPath: tvStatic
+      value: 
+      objectReference: {fileID: 1231898769}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3897403bfbb127c4782246c6e5635e1e, type: 2}
   m_IsPrefabParent: 0
@@ -1739,6 +1744,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed2e46b67fc4bdf49b228915f93e36b2, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1231898769 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1837425200127198, guid: ed2e46b67fc4bdf49b228915f93e36b2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1231898768}
 --- !u!1 &1304031295
 GameObject:
   m_ObjectHideFlags: 0
