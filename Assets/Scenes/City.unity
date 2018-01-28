@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -113,6 +113,80 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &119954686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 119954687}
+  - component: {fileID: 119954689}
+  - component: {fileID: 119954688}
+  m_Layer: 5
+  m_Name: Ending text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &119954687
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 119954686}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000042, y: 1.0000042, z: 1.0000042}
+  m_Children: []
+  m_Father: {fileID: 1698022259}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 320, y: 50}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &119954688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 119954686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Thank you. Our control over the public will continue uninterrupted...
+--- !u!222 &119954689
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 119954686}
 --- !u!1 &229331997
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +273,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 229331997}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &247701360 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1766048296263596, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+    type: 2}
+  m_PrefabInternal: {fileID: 276789011}
 --- !u!1001 &276789011
 Prefab:
   m_ObjectHideFlags: 0
@@ -336,6 +415,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &345605062 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1524704331240186, guid: 225de76071247ac45a26ed9466bc4ea5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1228377696}
 --- !u!1 &346513549 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1917336203795410, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
@@ -411,6 +495,11 @@ Transform:
 --- !u!1 &437920617 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1358605130165662, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
+    type: 2}
+  m_PrefabInternal: {fileID: 276789011}
+--- !u!1 &445855759 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1348272531608210, guid: 359bad16b7affeb45a6dcfb65de3b2e8,
     type: 2}
   m_PrefabInternal: {fileID: 276789011}
 --- !u!224 &458894886 stripped
@@ -538,12 +627,37 @@ MonoBehaviour:
   - {fileID: 346513549}
   - {fileID: 945139937}
   - {fileID: 1505107706}
-  currentGearsObjects: []
+  currentGearsObjects:
+  - {fileID: 445855759}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 247701360}
   selectedPost: 0
-  targetGearId: 0
+  targetGearId: 23
   gearPrefab: {fileID: 1015316736642560, guid: ed64609b6c9124fec989bbfa65b3052f, type: 2}
-  captionBackground: {fileID: 0}
-  remote: {fileID: 0}
+  captionBackground: {fileID: 1698022258}
+  remote: {fileID: 345605062}
+  mainCamera: {fileID: 1604560324}
 --- !u!4 &636784248
 Transform:
   m_ObjectHideFlags: 0
@@ -568,7 +682,7 @@ GameObject:
   - component: {fileID: 655882070}
   - component: {fileID: 655882069}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Starting text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -624,7 +738,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The master feed has stopped, citizen! This is unacceptable. Fix it at once!
+  m_Text: The master feed has stopped, citizen! This is unacceptable. FIX IT AT ONCE.
 --- !u!222 &655882070
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1088,7 +1202,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1524704331240186, guid: 225de76071247ac45a26ed9466bc4ea5, type: 2}
       propertyPath: m_Name
-      value: Remote (1)
+      value: Remote
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114873219347369512, guid: 225de76071247ac45a26ed9466bc4ea5, type: 2}
@@ -1329,6 +1443,7 @@ GameObject:
   - component: {fileID: 1698022259}
   - component: {fileID: 1698022261}
   - component: {fileID: 1698022260}
+  - component: {fileID: 1698022262}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -1347,6 +1462,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 655882068}
+  - {fileID: 119954687}
   m_Father: {fileID: 1527355825}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1388,6 +1504,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1698022258}
+--- !u!95 &1698022262
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1698022258}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 44c11693b4f0d409a99e4f8fb6518fee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1756996693 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1562906872200350, guid: 359bad16b7affeb45a6dcfb65de3b2e8,

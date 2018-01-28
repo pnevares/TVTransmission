@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour {
     // for success animations
     public GameObject captionBackground;
     public GameObject remote;
+    public GameObject mainCamera;
 
     private Vector3[] gearSizes = {
         new Vector3(0.05f, 0.05f, 0.05f),
@@ -105,6 +106,9 @@ public class GameController : MonoBehaviour {
                 success = true;
                 captionBackground.GetComponent<Animator>().enabled = true;
                 remote.GetComponent<Animator>().SetBool("success", true);
+                if(mainCamera != null) {
+                    mainCamera.GetComponent<Animator>().SetBool("success", true);
+                }
             }
 
             CheckNeighbors(neighbor);
