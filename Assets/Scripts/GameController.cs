@@ -7,11 +7,14 @@ public class GameController : MonoBehaviour {
     public int selectedPost = 0;
     public int targetGearId;
     public GameObject gearPrefab;
+    public AudioController audioController;
+	public bool isCity;
 
     // for success animations
     public GameObject captionBackground;
     public GameObject remote;
     public GameObject mainCamera;
+	public GameObject tvStatic;
 
     private Vector3[] gearSizes = {
         new Vector3(0.05f, 0.05f, 0.05f),
@@ -126,6 +129,12 @@ public class GameController : MonoBehaviour {
                 if (mainCamera != null) {
                     mainCamera.GetComponent<Animator>().SetBool("success", true);
                 }
+				tvStatic.GetComponent<Animator> ().SetBool ("success", true);
+				if (isCity == true) {
+					audioController.CitySuccess ();
+				} else {
+					audioController.Success ();
+				}
             }
 
             if (position < 20) {
